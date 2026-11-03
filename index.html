@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank DApp</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.5/ethers.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Bank DApp</h1>
+            <p>Decentralized Banking System</p>
+        </header>
+
+        <div class="student-info">
+            <h3>Student Information</h3>
+            <p>รหัสนักศึกษา: <span>66078633</span></p>
+            <p>ชื่อ-นามสกุล: <span>ธารารัตน์ สินสม</span></p>
+        </div>
+
+        <div class="wallet-box">
+            <h3>Wallet Connection</h3>
+
+            <p id="walletAddress">Not Connected</p>
+
+            <button onclick="connectWallet()">
+                Connect MetaMask
+            </button>
+        </div>
+
+        <div class="balance-box">
+            <h3>Account Balance</h3>
+
+            <h1 id="balance">0.0000 ETH</h1>
+
+            <button onclick="checkBalance()">
+                Check Balance
+            </button>
+        </div>
+
+        <div class="transaction-box">
+
+            <h3>Deposit</h3>
+
+            <input
+                type="number"
+                id="depositAmount"
+                placeholder="Enter ETH amount"
+                min="0"
+                step="any"
+            >
+
+            <button onclick="deposit()">
+                Deposit ETH
+            </button>
+
+        </div>
+
+        <div class="transaction-box">
+
+            <h3>Withdraw</h3>
+
+            <input
+                type="number"
+                id="withdrawAmount"
+                placeholder="Enter ETH amount"
+                min="0"
+                step="any"
+            >
+
+            <button onclick="withdraw()">
+                Withdraw ETH
+            </button>
+
+        </div>
+
+        <p id="status">Please connect your wallet.</p>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

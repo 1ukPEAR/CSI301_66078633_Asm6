@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #f5f7fa;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #172554;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+/* Student Information */
+.student-info {
+    background: #ffffff;
+    border: 1px solid #e8edf3;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+
+.student-info h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.student-info p {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.student-info span {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Wallet */
+.wallet-box {
+    background: #ffffff;
+    border: 1px solid #e8edf3;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+}
+
+.wallet-box h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+#walletAddress {
+    font-size: 13px;
+    color: #64748b;
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+
+/* Balance Card */
+.balance-box {
+    background: #172554;
+    color: white;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 22px;
+}
+
+.balance-box h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #bfdbfe;
+}
+
+.balance-box h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin: 15px 0 20px;
+    letter-spacing: -1px;
+}
+
+/* Transaction Cards */
+.transaction-box {
+    background: #ffffff;
+    border: 1px solid #e8edf3;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 18px;
+}
+
+.transaction-box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 14px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    min-height: 45px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.balance-box button {
+    background: #ffffff;
+    color: #172554;
+    max-width: 180px;
+}
+
+.balance-box button:hover {
+    background: #dbeafe;
+}
+
+/* Status */
+#status {
+    background: #ffffff;
+    border: 1px solid #e8edf3;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    overflow-wrap: anywhere;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .balance-box {
+        padding: 24px;
+    }
+
+    .balance-box h1 {
+        font-size: 30px;
+    }
+
+    .transaction-box,
+    .student-info,
+    .wallet-box {
+        padding: 18px;
+    }
+}
